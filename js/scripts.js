@@ -26,6 +26,7 @@ $(document).ready(function() {
 
         var indexOrderBox;
         var parentBlueBox;
+        var blueBoxParent;
 
         $(".show_order_box").each(function() {
 
@@ -66,6 +67,50 @@ $(document).ready(function() {
             if( parentBlueBox.children(".sroll-box").height() > 0 ) {
 
                 $(this).text("Показать");
+
+            } else {
+                
+                $(this).text("Скрыть");
+
+            }
+
+        });
+
+        $(".show-task-content").each(function() {
+
+            blueBoxParent = $(this).closest(".blue-box");
+
+            if( $(this).hasClass("active") ) {
+
+                blueBoxParent.children(".blue-box-slide-block").css({
+                    "height" : "auto"
+                });
+
+            } else {
+
+                blueBoxParent.children(".blue-box-slide-block").slideToggle(500);
+            }
+
+        });
+
+
+    });
+
+    $(function() {
+
+        $(".show-task-content").click(function(e) {
+
+            e.preventDefault();
+
+            $(this).toggleClass("active");
+
+            parentBlueBox = $(this).closest(".blue-box");
+
+            parentBlueBox.children(".blue-box-slide-block").slideToggle(500);
+
+            if( parentBlueBox.children(".blue-box-slide-block").height() > 0 ) {
+
+                $(this).text("Подробнее");
 
             } else {
                 
