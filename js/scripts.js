@@ -7,6 +7,12 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var sidebar = $("#sidebar");
+    var content = $(".content");
+    var sidebarBottomCoor;;
+
+    // ----------------------------
+
     // getFooterPosition();
 
     getSidebarParams();
@@ -18,6 +24,12 @@ $(document).ready(function() {
         // $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
         // $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+    });
+
+    $(document).scroll(function() {
+
+        getSidebarParams();
 
     });
 
@@ -54,27 +66,33 @@ $(document).ready(function() {
 
             $(".order-box:eq("+ indexOrderBox +") .slide-block").slideToggle(500);
 
-        });
+            if( $(".order-box:eq("+ indexOrderBox +")").next(".additional-slide-block").length ) {
 
-        $(".hide-show-scroll-box-btn").click(function(e) {
-
-            e.preventDefault();
-
-            parentBlueBox = $(this).closest(".blue-box");
-
-            parentBlueBox.children(".sroll-box").slideToggle(500);
-
-            if( parentBlueBox.children(".sroll-box").height() > 0 ) {
-
-                $(this).text("Показать");
-
-            } else {
-                
-                $(this).text("Скрыть");
+                $(".order-box:eq("+ indexOrderBox +")").next(".additional-slide-block").slideToggle(500);
 
             }
 
         });
+
+        // $(".hide-show-scroll-box-btn").click(function(e) {
+
+        //     e.preventDefault();
+
+        //     parentBlueBox = $(this).closest(".blue-box");
+
+        //     parentBlueBox.children(".sroll-box").slideToggle(500);
+
+        //     if( parentBlueBox.children(".sroll-box").height() > 0 ) {
+
+        //         $(this).text("Показать");
+
+        //     } else {
+                
+        //         $(this).text("Скрыть");
+
+        //     }
+
+        // });
 
         $(".show-task-content").each(function() {
 
@@ -92,11 +110,6 @@ $(document).ready(function() {
             }
 
         });
-
-
-    });
-
-    $(function() {
 
         $(".show-task-content").click(function(e) {
 
@@ -122,12 +135,73 @@ $(document).ready(function() {
 
     });
 
+    // ---------------------------------------
+
+
     $(function() {
 
-        $(".prev").html("&#8249;");
-        $(".next").html("&#8250;");
+        var indexTabs;
+        var attrTabNavLink;
 
-    })
+        $(".tabs").each(function() {
+
+            indexTabs = $(this).index(".tabs");
+
+            $(".tabs:eq("+ indexTabs +") .input-tab").each(function() {
+
+                if( $(this).is(":checked") ) {
+
+                    attrTabNavLink = $(this).attr("id");           
+
+                }               
+
+            });
+
+            $(".tabs:eq("+ indexTabs +") .tab-nav-link[for = '"+ attrTabNavLink +"']").addClass("active");
+
+        });
+
+        $(".tab-nav-link").click(function() {
+
+            indexTabs = $(this).closest(".tabs").index(".tabs");
+
+            // console.log(indexTabsContent);
+
+            // $(".tabs:eq("+ indexTabsContent +") .tab-nav-link").each(function() {
+
+            //     attrTabNavLink = $(this).attr("for");
+
+            //     if( $(".tabs:eq("+ indexTabsContent +") .input-tab[id = '"+ attrTabNavLink +"']").is(":checked") && $(this).hasClass("active") ) {
+
+            //         return true;      
+
+            //     } else {
+
+            //         $(".tabs:eq("+ indexTabsContent +") .tab-nav-link").removeClass("active");
+            //         $(this).addClass("active");
+
+            //     }
+
+            // });
+
+            $(".tabs:eq("+ indexTabs +") .tab-nav-link").removeClass("active");
+
+            $(this).addClass("active");        
+
+        });
+
+    });
+
+    // ---------------------------------------
+
+    $(function() {
+
+        $("input[type='tel']").mask("(999) 999-99-99");
+
+    });
+
+
+    // ---------------------------------------
 
 
     function getFooterPosition() {
@@ -155,21 +229,79 @@ $(document).ready(function() {
 
     }
 
+    sidebarBottomCoor = sidebar.outerHeight() + $(".header-site").height();
 
     function getSidebarParams() {
 
-        var sidebar = $("#sidebar");
-        var content = $(".content");
+        var headerSite = $(".header-site");
+        var mainContentHeader = $(".main-content-header");
 
-        var sidebarHeight = $(window).height() - $(".header-site").height();
+        var documentBottomCoor = $(window).height() + $(document).scrollTop();
+        var sidebarHeight = $(window).height() - headerSite.height();
 
-        sidebar.css({
-            "top" : $(".header-site").height() + "px",
-            "height" : sidebarHeight + "px"
-        });
+        if( $(document).scrollTop() > headerSite .height() ) {
+
+            headerSite.addClass("fixed_scroll");
+
+            mainContentHeader.addClass("fixed_scroll");
+
+            mainContentHeader.css({
+                "top" : headerSite.height() + "px"
+            });
+
+            var positionInterval = setInterval(function() {
+
+                mainContentHeader.css({
+                    "top" : headerSite.height() + "px"
+                });
+
+                if( mainContentHeader.offset().top >  headerSite.height()) {
+
+                    clearInterval(positionInterval);
+
+                    mainContentHeader.css({
+                        "top" : headerSite.height() + "px"
+                    });
+
+                }
+
+            }, 35);
+
+        } else {
+
+            headerSite.removeClass("fixed_scroll");
+
+            mainContentHeader.removeClass("fixed_scroll");
+
+            mainContentHeader.css({
+                "top" : 0 + "px"
+            });
+
+        }
+
+
+        if( documentBottomCoor >= sidebarBottomCoor ) {
+
+            sidebar.addClass("fixed");
+
+            sidebar.css({
+                "top" : headerSite.height() + "px",
+                "height" : sidebarHeight + "px"
+            });            
+
+        } else {
+
+            sidebar.removeClass("fixed");
+
+            sidebar.css({
+                "top" : 0 + "px",
+                "height" : "auto"
+            });
+
+        }  
 
         content.css({
-            "margin-top" : $(".header-site").height() + "px"
+            "margin-top" : headerSite.height() + "px"
         });
 
     }
