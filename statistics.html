@@ -326,19 +326,19 @@
 											</select>
 										</div>
 
-										<!-- <div class="form-row select-box">
-											<select>
+										<div class="form-row select-box">
+											<select class="custom-select">
 												<option>
 
-													<p class="two-cols-option">
-														<span class="col-1 img-box">
-															<img src="img/user_photo.jpg" alt="" />
-														</span>
-														<span class="col-2">
-															<span>Замерщик</span>
-															<span class="p-1">Анюта</span>
-														</span>
-													</p>
+													<div class="two-cols-option">
+														<div class="col-1 img-box">
+															<img src="img/user.jpg" />
+														</div>
+														<div class="col-2">
+															<div>Замерщик</div>
+															<div class="p-1">Анюта</div>
+														</div>
+													</div>
 
 												</option>
 												<option>Город_1</option>
@@ -347,7 +347,7 @@
 												<option>Город_4</option>
 												<option>Город_5</option>
 											</select>
-										</div> -->
+										</div>
 									</div>
 
 								</div>
@@ -391,7 +391,45 @@
 
 			})(jQuery);
 
-			$("select").select2();
+			// $("select").select2();
+
+			var optionTxt = [{
+		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		    }, {
+		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		    }, {
+		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		    }, {
+		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		    }, {
+		       ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		    }];
+
+			function formatState (optionTxt) {
+			  // if (!state.id) { return state.text; }
+			  // var $optionTxt = $(
+
+			 //  if (!optionTxt.id) { return optionTxt.text; }
+			 //  var ctn = $(optionTxt.element).html();
+
+			 //  console.log(ctn);
+				// if (!ctn) {
+				//     return optionTxt.text;
+				// }
+				// else{
+
+				// 	var $optionTxt = $("<span>" + ctn + "</span>");
+			 //  }
+
+			  return optionTxt;
+			};
+
+			
+
+			$(".custom-select").select2({
+				 templateResult: formatState,
+				 templateSelection: formatState
+			});
 
 			$('.datepicker-here').data('datepicker');
 
