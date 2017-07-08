@@ -115,7 +115,6 @@
 								</div>
 
 								<div class="col col-2 right">
-									<a href="#" class="blue-pill">Добавить заявку</a>
 									<div class="search-box">
 
 										<form>
@@ -147,18 +146,16 @@
 									</div>
 									<div class="slide-block">
 										<div class="order-content">
-											<div class="order-content-sect-1">
+											<div class="order-content-sect-1 border-none">
 												<div class="order-content-header offset-ziro">
 													<div class="col col-1">
 														<h3>Заявка 002-251</h3>
-														<p>(15:30)</p>
 													</div>
 													<div class="col col-2">
-														<h3>Открытая заявка</h3>
+														
 													</div>
 													<div class="col col-3">
 														<ul class="control-btns">
-															<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
 															<li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
 														</ul>
 													</div>
@@ -166,148 +163,166 @@
 
 												<div class="order-content-rows">
 
-													<div class="row row-1 offset-ziro">
-														<div class="col col-1">
-															<i class="icon user-icon"></i>
-															<p>Зинаида</p>
-															<p class="p-small-grey">(Москва)</p>
-														</div>
-														<div class="col col-2">
-															<a href="tel:" class="tek-link"><i class="fa fa-phone" aria-hidden="true"></i>+7 984 987 34 34</a>
-														</div>
-														<div class="col col-3">
-															<p class="price"><i class="cash-icon"></i>169 000 <i class="fa fa-rub"></i></p>
-														</div>
-														<div class="col col-4">
-															<div class="order-user">
-																<div class="order-user-col order-user-col-1">
-																	<div class="img-box">
-																		<img src="img/user.jpg" alt="" />
+													<form>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Статус заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Открытая заявка</option>
+																				<option>Закрытая заявка</option>
+																			</select>
+																		</div>
 																	</div>
 																</div>
-																<div class="order-user-col order-user-col-2">										
-																	<p>Замерщик</p>
-																	<p class="p-1">Анюта</p>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Время заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="15:30" />
+																		</div>
+																	</div>
 																</div>
 															</div>
+
 														</div>
-													</div>
 
-													<div class="row row-2 offset-ziro">
-
-														<div class="col col-1">
-															<div>
-																<i class="icon home-icon"></i>
-																<p>Москва</p>
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Имя оператора</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Зинаида" />
+																		</div>
+																	</div>
+																</div>
 															</div>
-															<p class="p-small">Переулок Московского патриархата 25a, кв98</p>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Время заявки</label>
+																	<div class="input-box">
+																		<div class="tel-input input-box-border">
+																			<p>+7</p>
+																			<input type="tel" placeholder="(___) ___-__-__">
+																		</div>
+																	</div>
+																</div>
+															</div>
+
 														</div>
 
-														<div class="col col-2">
-															<div class="photos-box">
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Цена</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="number" placeholder="169 000 ₽" />
+																		</div>
+																	</div>
+																</div>
+															</div>
 
-																<ul class="photos-list">
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Замерщик</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Анюта</option>
+																				<option>Замерщик_2</option>
+																				<option>Замерщик_3</option>
+																				<option>Замерщик_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Город</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Москва</option>
+																				<option>Город_2</option>
+																				<option>Город_3</option>
+																				<option>Город_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Улица</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Патриархата 25a, кв98" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row">
+
+															<div class="col">
+
+																<ul class="orders-photos-list">
 																	<li>
+																		<div class="upl-photo-block">
+																			<input type="file" class="input-file">
+																			<button type="button" class="upl-image"></button>
+																		</div>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
 																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
 																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
-																	<li>
-																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
-																	</li>
-																	<li>
-																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
-																	</li>
-																	<li>
-																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
-																	</li>												
+											
 																</ul>
-															<!-- 
-																<ul class="photos-list">
-																	<li>
-																		<div class="img-box"><img src="img/photos/photo_01.jpg" alt="" ></div>
-																	</li>
-																	<li>
-																		<div class="img-box"><img src="img/photos/photo_01.jpg" alt="" ></div>
-																	</li>
-																	<li>
-																		<div class="img-box"><img src="img/photos/photo_01.jpg" alt="" ></div>
-																	</li>
-																	<li>
-																		<div class="img-box"><img src="img/photos/photo_01.jpg" alt="" ></div>
-																	</li>
-																	<li>
-																		<div class="img-box"><img src="img/photos/photo_01.jpg" alt="" ></div>
-																	</li>
-																</ul> -->
 
 															</div>
-														</div>
-													</div>
 
-												</div>
+														</div>
 
-											</div>
+													</form>
 
-											<div class="blue-box">
-												<div class="blue-box-header offset-ziro">
-													<div class="col col-1">
-														<a href="#" class="blue-pill">Создать задачу по этой заявке</a>
-														<a href="#" class="white-pill"><i class="calc-icon"></i>Калькулятор</a>
-													</div>
-													<div class="col col-2">
-														<a href="#" class="show-task-content">Подробнее</a>
-													</div>
-												</div>
-
-												<div class="blue-box-slide-block sroll-box scroll">
-													<div class="sroll-box-header">
-														<h3>Лента изменений</h3>
-													</div>
-													<div class="table">
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-													</div>
 												</div>
 
 											</div>
 
 										</div>
+
 									</div>
+
 								</div>
 
 								<div class="order-box">
@@ -323,18 +338,16 @@
 									</div>
 									<div class="slide-block">
 										<div class="order-content">
-											<div class="order-content-sect-1">
+											<div class="order-content-sect-1 border-none">
 												<div class="order-content-header offset-ziro">
 													<div class="col col-1">
 														<h3>Заявка 002-251</h3>
-														<p>(15:30)</p>
 													</div>
 													<div class="col col-2">
-														<h3>Открытая заявка</h3>
+														
 													</div>
 													<div class="col col-3">
 														<ul class="control-btns">
-															<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
 															<li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
 														</ul>
 													</div>
@@ -342,127 +355,166 @@
 
 												<div class="order-content-rows">
 
-													<div class="row row-1 offset-ziro">
-														<div class="col col-1">
-															<i class="icon user-icon"></i>
-															<p>Зинаида</p>
-															<p class="p-small-grey">(Москва)</p>
-														</div>
-														<div class="col col-2">
-															<a href="tel:" class="tek-link"><i class="fa fa-phone" aria-hidden="true"></i>+7 984 987 34 34</a>
-														</div>
-														<div class="col col-3">
-															<p class="price"><i class="cash-icon"></i>169 000 <i class="fa fa-rub"></i></p>
-														</div>
-														<div class="col col-4">
-															<div class="order-user">
-																<div class="order-user-col order-user-col-1">
-																	<div class="img-box">
-																		<img src="img/user.jpg" alt="" />
+													<form>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Статус заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Открытая заявка</option>
+																				<option>Закрытая заявка</option>
+																			</select>
+																		</div>
 																	</div>
 																</div>
-																<div class="order-user-col order-user-col-2">										
-																	<p>Замерщик</p>
-																	<p class="p-1">Анюта</p>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Время заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="15:30" />
+																		</div>
+																	</div>
 																</div>
 															</div>
+
 														</div>
-													</div>
 
-													<div class="row row-2 offset-ziro">
-
-														<div class="col col-1">
-															<div>
-																<i class="icon home-icon"></i>
-																<p>Москва</p>
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Имя оператора</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Зинаида" />
+																		</div>
+																	</div>
+																</div>
 															</div>
-															<p class="p-small">Переулок Московского патриархата 25a, кв98</p>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Телефон</label>
+																	<div class="input-box">
+																		<div class="tel-input input-box-border">
+																			<p>+7</p>
+																			<input type="tel" placeholder="(___) ___-__-__">
+																		</div>
+																	</div>
+																</div>
+															</div>
+
 														</div>
 
-														<div class="col col-2">
-															<div class="photos-box">
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Цена</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="number" placeholder="169 000 ₽" />
+																		</div>
+																	</div>
+																</div>
+															</div>
 
-																<ul class="photos-list">
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Замерщик</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Анюта</option>
+																				<option>Замерщик_2</option>
+																				<option>Замерщик_3</option>
+																				<option>Замерщик_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Город</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Москва</option>
+																				<option>Город_2</option>
+																				<option>Город_3</option>
+																				<option>Город_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Улица</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Патриархата 25a, кв98" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row">
+
+															<div class="col">
+
+																<ul class="orders-photos-list">
 																	<li>
+																		<div class="upl-photo-block">
+																			<input type="file" class="input-file">
+																			<button type="button" class="upl-image"></button>
+																		</div>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
 																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
 																	<li>
+																		<button type="button" class="del_miniature"></button>
 																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
 																	</li>
-																	<li>
-																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
-																	</li>
-																	<li>
-																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
-																	</li>													
+											
 																</ul>
 
 															</div>
-														</div>
-													</div>
 
-												</div>
+														</div>
 
-											</div>
+													</form>
 
-											<div class="blue-box">
-												<div class="blue-box-header offset-ziro">
-													<div class="col col-1">
-														<a href="#" class="blue-pill">Создать задачу по этой заявке</a>
-														<a href="#" class="white-pill"><i class="calc-icon"></i>Калькулятор</a>
-													</div>
-													<div class="col col-2">
-														<a href="#" class="show-task-content">Подробнее</a>
-													</div>
-												</div>
-
-												<div class="blue-box-slide-block sroll-box scroll">
-													<div class="sroll-box-header">
-														<h3>Лента изменений</h3>
-													</div>
-													<div class="table">
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-														<div class="table-row">
-															<div class="cell cell-1">
-																<p>12 мая, 21:30</p>
-															</div>
-															<div class="cell cell-2">
-																<p>Замерщик Чубака изменил цену на 28 000 руб</p>
-															</div>
-														</div>
-													</div>
 												</div>
 
 											</div>
 
 										</div>
+
 									</div>
+
 								</div>
 
 							<!-- /Заявки -->
@@ -549,8 +601,7 @@
 
 					</div>
 
-				</div>
-				
+				</div>				
 
 			</div>
 		<!-- /Content -->

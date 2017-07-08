@@ -557,3 +557,100 @@
 .blue-select-box  .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow:before {
   content: "\f106";
 }
+
+.select2.select2-container {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none !important;
+    text-align: left;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding: 6px 0 0 0;
+  font-family: "ProximaNova", Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: rgb(189, 189, 189) !important;
+}
+
+.select2-results__option {
+  font-family: "ProximaNova", Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  text-shadow: none !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow:before {
+    font-family: "FontAwesome";
+    content: "\f107";
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgb(128, 143, 163) !important;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow:before {
+    font-family: "FontAwesome";
+    content: "\f106";
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgb(128, 143, 163) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0 !important;
+}
+
+.input-box-border .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-family: "ProximaNova", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #3d4f66 !important;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.input-box-border .select2-results__option  {
+    font-size: 17px !important;
+    line-height: 17px !important;
+}
+
+.input-box-border .select2-container {
+    padding: 0 5% 2px 5%;
+}
+
+.input-box-border .select2-container--default .select2-selection--single .select2-selection__arrow:before {
+    font-family: "FontAwesome";
+    content: "\f107";
+    position: relative;
+    top: 4px;
+    left: -8px;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(128, 143, 163) !important;
+}
+
+.input-box-border .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow:before {
+    font-family: "FontAwesome";
+    content: "\f106";
+    position: relative;
+    top: 4px;
+    left: -8px;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(128, 143, 163) !important;
+}

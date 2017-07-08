@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="description" content="">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	
+	<title></title>
+	
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+	<!-- Header -->
+
+	<header>
+
+		<div class="header-site" id="header_site">
+			
+			<div class="site-row offset-ziro">
+
+				<div class="col col-1">
+					
+					<a href="#" class="logo">
+						<div class="img-box">
+							<img src="img/logo.png" alt="" />
+						</div>
+						<div class="right-col">
+							<p>CRM</p>
+							<p class="small">потолочкин</p>
+						</div>
+					</a>
+
+				</div>
+
+				<div class="col col-2">
+					
+					<div class="main-nav-block">
+						<ul class="main-nav-list">
+							<li><a href="" class="active"><i class="nav-icon nav-icon-1"></i>Заявки</a></li>
+							<li><a href=""><i class="nav-icon nav-icon-2"></i>Задачи</a></li>
+							<li><a href=""><i class="nav-icon nav-icon-3"></i>Обращения</a></li>
+							<li><a href=""><i class="nav-icon nav-icon-4"></i>Рейтинг</a></li>
+							<li><a href=""><i class="nav-icon nav-icon-5"></i>Статистика</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="col col-3">
+					<div class="user-block">
+						<div class="col col-1">
+							<p class="p-1">IraDrogub</p>
+							<p>оператор</p>
+						</div>
+						<div class="col col-2">
+							<a href="#" class="img-box">
+								<img src="img/header_user_photo.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+								
+	</header>
+
+	<!-- /Header -->
+
+		<!-- Content -->
+			<div class="content">
+
+				<div class="two-col-templ site-row clearfix">
+
+				<!-- Main Content -->
+
+					<div class="main-content left">
+
+						<div class="inner">
+							
+							<div class="main-content-header clearfix">
+
+								<div class="col col-1 left">
+									<i class="icon icon-order"></i>
+									<h2>Заявки</h2>
+								</div>
+
+								<div class="col col-2 right">
+									<!-- <a href="#" class="blue-pill">Добавить заявку</a> -->
+									<div class="search-box">
+
+										<form>
+
+											<input type="text" placeholder="Поиск…" />
+											<button type="submit" class="submit-btn"></button>
+
+										</form>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div>
+
+							<!-- Заявки -->
+
+								<div class="order-box">
+									<div class="order-box-header clearfix">
+										<div class="col col-1 left">
+											<h3>02 Мая <span class="grey">Среда</span></h3>
+										</div>
+										<div class="col col-2 right">
+											<button type="button" class="show_order_box active">
+												<i class="fa fa-angle-down" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+									<div class="slide-block">
+										<div class="order-content">
+											<div class="order-content-sect-1 border-none">
+												<div class="order-content-header offset-ziro">
+													<div class="col col-1">
+														<h3>Заявка 002-251</h3>
+													</div>
+													<div class="col col-2">
+														<!-- <h3>Открытая заявка</h3> -->
+													</div>
+													<div class="col col-3">
+														<ul class="control-btns">
+															<li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="order-content-rows">
+
+													<form>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Статус заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Открытая заявка</option>
+																				<option>Закрытая заявка</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Время заявки</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="15:30" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Имя оператора</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Зинаида" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Время заявки</label>
+																	<div class="input-box">
+																		<div class="tel-input input-box-border">
+																			<p>+7</p>
+																			<input type="tel" placeholder="(___) ___-__-__">
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Цена</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="number" placeholder="169 000 ₽" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Замерщик</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Анюта</option>
+																				<option>Замерщик_2</option>
+																				<option>Замерщик_3</option>
+																				<option>Замерщик_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<div class="form-box-input">
+																	<label>Город</label>
+																	<div class="input-box">
+																		<div class="input-box-border select-box-border">
+																			<select>
+																				<option>Москва</option>
+																				<option>Город_2</option>
+																				<option>Город_3</option>
+																				<option>Город_4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<div class="form-box-input">
+																	<label>Улица</label>
+																	<div class="input-box">
+																		<div class="input-box-border">
+																			<input type="text" placeholder="Патриархата 25a, кв98" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row one-col">
+															<div class="form-box-input">
+																<label>Комментарий</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<textarea placeholder="Тут должен быть написан коммент"></textarea>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row one-col">
+															<div class="form-box-input">
+																<label>Обьяснение</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<textarea placeholder="Тут должено быть написано обьяснение"></textarea>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+
+															<div class="col">
+
+																<ul class="orders-photos-list">
+																	<li>
+																		<div class="upl-photo-block">
+																			<input type="file" class="input-file">
+																			<button type="button" class="upl-image"></button>
+																		</div>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+											
+																</ul>
+
+															</div>
+
+														</div>
+
+													</form>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="order-box">
+									<div class="order-box-header clearfix">
+										<div class="col col-1 left">
+											<h3>03 Мая <span class="grey">Четверг</span></h3>
+										</div>
+										<div class="col col-2 right">
+											<button type="button" class="show_order_box active">
+												<i class="fa fa-angle-down" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+									<div class="slide-block">
+										<div class="order-content">
+											<div class="order-content-sect-1 border-none">
+												<div class="order-content-header offset-ziro">
+													<div class="col col-1">
+														<h3>Заявка 002-251</h3>
+													</div>
+													<div class="col col-2">
+														<!-- <h3>Открытая заявка</h3> -->
+													</div>
+													<div class="col col-3">
+														<ul class="control-btns">
+															<li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="order-content-rows">
+
+													<form>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<label>Статус заявки</label>
+																<div class="input-box">
+																	<div class="input-box-border select-box-border">
+																		<select>
+																			<option>Открытая заявка</option>
+																			<option>Закрытая заявка</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<label>Время заявки</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<input type="text" placeholder="15:30" />
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<label>Имя оператора</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<input type="text" placeholder="Зинаида" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<label>Время заявки</label>
+																<div class="input-box">
+																	<div class="tel-input input-box-border">
+																		<p>+7</p>
+																		<input type="tel" placeholder="(___) ___-__-__">
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<label>Цена</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<input type="number" placeholder="169 000 ₽" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<label>Замерщик</label>
+																<div class="input-box">
+																	<div class="input-box-border select-box-border">
+																		<select>
+																			<option>Анюта</option>
+																			<option>Замерщик_2</option>
+																			<option>Замерщик_3</option>
+																			<option>Замерщик_4</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row row-two-cols offset-ziro">
+															
+															<div class="col col-1">
+																<label>Город</label>
+																<div class="input-box">
+																	<div class="input-box-border select-box-border">
+																		<select>
+																			<option>Москва</option>
+																			<option>Город_2</option>
+																			<option>Город_3</option>
+																			<option>Город_4</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col col-2">
+																<label>Улица</label>
+																<div class="input-box">
+																	<div class="input-box-border">
+																		<input type="text" placeholder="Патриархата 25a, кв98" />
+																	</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row one-col">
+
+															<label>Комментарий</label>
+															<div class="input-box">
+																<div class="input-box-border">
+																	<textarea placeholder="Тут должен быть написан коммент"></textarea>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row one-col">
+
+															<label>Обьяснение</label>
+															<div class="input-box">
+																<div class="input-box-border">
+																	<textarea placeholder="Тут должено быть написано обьяснение"></textarea>
+																</div>
+															</div>
+
+														</div>
+
+														<div class="row">
+
+															<div class="col">
+
+																<ul class="orders-photos-list">
+																	<li>
+																		<div class="upl-photo-block">
+																			<input type="file" class="input-file">
+																			<button type="button" class="upl-image"></button>
+																		</div>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+																	<li>
+																		<button type="button" class="del_miniature"></button>
+																		<a href=""><img src="img/photos/photo_01.jpg" alt="" ></a>
+																	</li>
+											
+																</ul>
+
+															</div>
+
+														</div>
+
+													</form>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							<!-- /Заявки -->
+
+							</div>
+
+						</div>
+
+					</div>
+
+				<!-- /Main Content -->				
+
+					<div class="sidebar scroll right" id="sidebar">
+
+						<div class="inner">
+
+							<form>
+
+								<div class="sidebar-header">
+									
+									<img class="filter-logo" src="img/filter_logo.svg" alt=" " />
+									<h2>Фильтр</h2>
+
+								</div>
+
+								<div class="form-row datepiker-box input-hidden">
+
+									<input type='text' class="datepicker-here inline-datepicker"  />
+
+								</div>
+
+								<div class="form-row select-box">
+									<select>
+										<option>Статус</option>
+										<option>Статус_1</option>
+										<option>Статус_2</option>
+										<option>Статус_3</option>
+										<option>Статус_4</option>
+										<option>Статус_5</option>
+									</select>
+								</div>
+
+								<div class="form-row select-box">
+									<select>
+										<option>Замерщик</option>
+										<option>Замерщик_1</option>
+										<option>Замерщик_2</option>
+										<option>Замерщик_3</option>
+										<option>Замерщик_4</option>
+										<option>Замерщик_5</option>
+									</select>
+								</div>
+
+								<div class="form-row select-box">
+									<select>
+										<option>Город</option>
+										<option>Город_1</option>
+										<option>Город_2</option>
+										<option>Город_3</option>
+										<option>Город_4</option>
+										<option>Город_5</option>
+									</select>
+								</div>
+
+								<div class="form-row">
+									<div class="tel-input">
+										<p>+7</p>
+										<input type="tel" placeholder="(___) ___-__-__">
+									</div>
+								</div>
+
+								<div class="form-row checkbox-box">
+									<input type="checkbox" name="ch_1" id="ch_1" />
+									<label for="ch_1">Удаленые заявки</label>
+								</div>
+
+								<div class="submitt-box">
+									<input type="submit" class="submit-btn blue-pill" value="Поиск" />
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>				
+
+			</div>
+		<!-- /Content -->
+
+		<!-- Footer -->
+<!-- 
+		<footer>
+			
+		<div class="footer"></div>
+			
+
+		</footer> -->
+
+		<!-- /Footer -->
+
+		<script src="js/scripts.js"></script>
+
+		<script>
+			
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
+
+			$("select").select2();
+
+			$('.datepicker-here').data({inline: false});
+			$('.datepicker-here.inline-datepicker').data({inline: true});
+
+		</script>
+	
+	</div>
+
+</body>
+</html>

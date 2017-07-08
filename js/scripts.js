@@ -200,6 +200,31 @@ $(document).ready(function() {
 
     });
 
+    // --------------------------------------
+
+    $(function() {
+
+        var uplBoxParent;
+        var miniatureParent;
+
+        $(".upl-image").click(function() {
+
+            uplBoxParent = $(this).closest(".upl-photo-block");
+
+            uplBoxParent.children(".input-file").click();
+
+        });
+
+        $(".del_miniature").click(function() {
+
+            miniatureParent = $(this).closest(".orders-photos-list li");
+
+            miniatureParent.fadeOut(200);
+
+        });
+
+    });
+
 
     // ---------------------------------------
 

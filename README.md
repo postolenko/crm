@@ -3,3 +3,8 @@
 # http://postolenko.github.io/crm/crm_potolok_copy_4.html
 # http://postolenko.github.io/crm/rating.html
 # http://postolenko.github.io/crm/statistics.html
+# http://postolenko.github.io/crm/calc.html
+# http://postolenko.github.io/crm/copy_open.html
+# http://postolenko.github.io/crm/create_order.html
+# http://postolenko.github.io/crm/orders_copy.html
+# http://postolenko.github.io/crm/orders_edit.html

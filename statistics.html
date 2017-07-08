@@ -18,19 +18,15 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/billboard.css"> -->
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
-	<script type="text/javascript" src="vendors/js/parallax.js"></script>
 	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
 	<script type="text/javascript" src="vendors/js/chartist.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
-	<!-- <script type="text/javascript" src="vendors/js/d3.min.js"></script> -->
-	<!-- <script type="text/javascript" src="vendors/js/billboard.js"></script> -->
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
@@ -118,7 +114,7 @@
 							<div class="main-content-header clearfix">
 
 								<div class="col col-1 left">
-									<i class="icon-order"></i>
+									<i class="icon statistics_icon_middle"></i>
 									<h2>Статистика</h2>
 								</div>
 
@@ -391,45 +387,45 @@
 
 			})(jQuery);
 
-			// $("select").select2();
+			$("select").select2();
 
-			var optionTxt = [{
-		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		    }, {
-		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		    }, {
-		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		    }, {
-		        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		    }, {
-		       ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		    }];
+			// var optionTxt = [{
+		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		 //    }, {
+		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		 //    }, {
+		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		 //    }, {
+		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		 //    }, {
+		 //       ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
+		 //    }];
 
-			function formatState (optionTxt) {
-			  // if (!state.id) { return state.text; }
-			  // var $optionTxt = $(
+			// function formatState (optionTxt) {
+			//   // if (!state.id) { return state.text; }
+			//   // var $optionTxt = $(
 
-			 //  if (!optionTxt.id) { return optionTxt.text; }
-			 //  var ctn = $(optionTxt.element).html();
+			//  //  if (!optionTxt.id) { return optionTxt.text; }
+			//  //  var ctn = $(optionTxt.element).html();
 
-			 //  console.log(ctn);
-				// if (!ctn) {
-				//     return optionTxt.text;
-				// }
-				// else{
+			//  //  console.log(ctn);
+			// 	// if (!ctn) {
+			// 	//     return optionTxt.text;
+			// 	// }
+			// 	// else{
 
-				// 	var $optionTxt = $("<span>" + ctn + "</span>");
-			 //  }
+			// 	// 	var $optionTxt = $("<span>" + ctn + "</span>");
+			//  //  }
 
-			  return optionTxt;
-			};
+			//   return optionTxt;
+			// };
 
 			
 
-			$(".custom-select").select2({
-				 templateResult: formatState,
-				 templateSelection: formatState
-			});
+			// $(".custom-select").select2({
+			// 	 templateResult: formatState,
+			// 	 templateSelection: formatState
+			// });
 
 			$('.datepicker-here').data('datepicker');
 
