@@ -9,9 +9,32 @@ $(document).ready(function() {
 
     var sidebar = $("#sidebar");
     var content = $(".content");
-    var sidebarBottomCoor;;
+    var sidebarBottomCoor;
 
     // ----------------------------
+
+    var indexOrderBox;
+    var parentBlueBox;
+    var blueBoxParent;
+
+    // ----------------------------
+
+    var indexTabs;
+    var attrTabNavLink;
+
+    // ----------------------------
+
+    var uplBoxParent;
+    var miniatureParent;
+
+    // ---------------------------
+
+    var headerSite;
+    var mainContentHeader;
+    var documentBottomCoor;
+    var sidebarHeight;
+
+    // ---------------------------
 
     getFooterPosition();
 
@@ -42,9 +65,9 @@ $(document).ready(function() {
 
     $(function() {
 
-        var indexOrderBox;
-        var parentBlueBox;
-        var blueBoxParent;
+        // var indexOrderBox;
+        // var parentBlueBox;
+        // var blueBoxParent;
 
         $(".show_order_box").each(function() {
 
@@ -126,8 +149,8 @@ $(document).ready(function() {
 
     $(function() {
 
-        var indexTabs;
-        var attrTabNavLink;
+        // var indexTabs;
+        // var attrTabNavLink;
 
         $(".tabs").each(function() {
 
@@ -190,8 +213,8 @@ $(document).ready(function() {
 
     $(function() {
 
-        var uplBoxParent;
-        var miniatureParent;
+        // var uplBoxParent;
+        // var miniatureParent;
 
         $(".upl-image").click(function() {
 
@@ -255,11 +278,11 @@ $(document).ready(function() {
 
         if($(".header-site").length > 0 && $(".main-content-header").length > 0) {
 
-            var headerSite = $(".header-site");
-            var mainContentHeader = $(".main-content-header");        
+            headerSite = $(".header-site");
+            mainContentHeader = $(".main-content-header");        
 
-            var documentBottomCoor = $(window).height() + $(document).scrollTop();
-            var sidebarHeight = $(window).height() - headerSite.height();
+            documentBottomCoor = $(window).height() + $(document).scrollTop();
+            sidebarHeight = $(window).height() - headerSite.height();
 
             if( $(document).scrollTop() > headerSite .height() ) {
 
