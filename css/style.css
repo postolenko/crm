@@ -715,9 +715,7 @@ textarea::placeholder {
 /*-- Main Page --*/
 
 .main-page {
-    width: 100%;
-    min-height: 100vh;
-    border: 1px solid #419bf9;
+    /*border: 1px solid #419bf9;*/
     background-image: url(../img/index_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -729,13 +727,12 @@ textarea::placeholder {
     width: 100%;
 }
 
-.signin-block .center-block:before,
-.signin-block .center-block:after {
+.signin-block .center-block .center-coor,
+.signin-block .center-block .center-coor {
     display: table-cell;
     vertical-align: middle;
     content: "";
     width: 1%;
-    height: 100vh;
 }
 
 .signin-block .inner {
@@ -791,6 +788,7 @@ textarea::placeholder {
     max-width: 240px;
     height: 64px;
     margin: 14px 0;
+    padding: 0 2%;
     border: 1px solid transparent;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;

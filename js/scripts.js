@@ -25,6 +25,12 @@ $(document).ready(function() {
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
+        // --------------------
+
+        $(".center-coor").css({
+            "height" : $(window).height() - $(".footer").outerHeight(true) + "px"
+        });
+
     });
 
     $(document).scroll(function() {
@@ -205,6 +211,15 @@ $(document).ready(function() {
 
     });
 
+    // ---------------------------------------
+
+    $(function() {
+
+        $(".center-coor").css({
+            "height" : $(window).height() - $(".footer").outerHeight(true) + "px"
+        });
+
+    });
 
     // ---------------------------------------
 
