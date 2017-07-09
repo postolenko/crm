@@ -1947,7 +1947,7 @@ textarea::placeholder {
 
 .tel-input p {
     display: table-cell !important;
-    vertical-align: top;
+    vertical-align: top !important;
     width: 21px;
     height: 26px;
     font-family: "ProximaNova", Arial, Verdana, sans-serif;
@@ -1959,7 +1959,7 @@ textarea::placeholder {
 
 .tel-input input {
     display: table-cell !important;
-    vertical-align: top;
+    vertical-align: top !important;
     width: auto;
     height: 26px;
     font-family: "ProximaNova", Arial, Verdana, sans-serif;
