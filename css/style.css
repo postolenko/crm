@@ -3096,7 +3096,7 @@ textarea::placeholder {
     color: #3d4f66 !important;
     font-weight: normal;
     text-transform: none;
-    padding: 2px 9px 0 0px;
+    padding: 3px 9px 0 0px;
 }
 
 .tel-input.input-box-border input {
