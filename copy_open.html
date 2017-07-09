@@ -11,17 +11,18 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
-	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
+	<script type="text/javascript" src="vendors/js/chartist.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
@@ -836,7 +837,7 @@
 								</div>
 
 								<div class="form-row select-box">
-									<select>
+									<select data-minimum-results-for-search="Infinity">
 										<option>Статус</option>
 										<option>Статус_1</option>
 										<option>Статус_2</option>
@@ -847,7 +848,7 @@
 								</div>
 
 								<div class="form-row select-box">
-									<select class="user-select-2">
+									<select class="user-select-2" data-user = "Замерщик">
 										<option data-img-url = "img/user.jpg">Анюта</option>
 										<option data-img-url = "img/user.jpg">Анюта</option>
 										<option data-img-url = "img/user.jpg">Анюта</option>

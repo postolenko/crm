@@ -491,7 +491,6 @@ textarea::placeholder {
 
 .main-nav-list li a:hover {
     color: #4a77e2;
-    font-weight: 600;
 }
 
 .main-nav-list li a.active {
@@ -1140,6 +1139,7 @@ textarea::placeholder {
 .order-box-header {
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 .order-box-header .col {
@@ -1197,6 +1197,8 @@ textarea::placeholder {
     width: 36px;
     height: 36px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
     background: rgba(255, 255, 255, 1);
     border: 1px solid #d0d0d0;
     -webkit-border-radius: 50%;
@@ -1205,23 +1207,23 @@ textarea::placeholder {
     -o-border-radius: 50%;
     border-radius: 50%;
 
-    -webkit-transition-property: background, border;
+    -webkit-transition-property: transform, background, border;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background, border;
+    -moz-transition-property: transform, background, border;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background, border;
+    -ms-transition-property: transform, background, border;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background, border;
+    -o-transition-property: transform, background, border;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background, border;
+    transition-property: transform, background, border;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
@@ -1262,11 +1264,11 @@ textarea::placeholder {
 }
 
 .show_order_box.active {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 .slide-block {
@@ -1835,7 +1837,7 @@ textarea::placeholder {
 }
 
 .sroll-box-header {
-    padding: 36px 0 5px 0;
+    padding: 9px 0 5px 0;
 }
 
 .sroll-box-header h3 {
@@ -1851,7 +1853,7 @@ textarea::placeholder {
 }
 
 .table {
-    padding: 15px 4%;
+    padding: 0 4% 15px 4%;
 }
 
 .table-row {
@@ -2001,6 +2003,14 @@ textarea::placeholder {
 
 .tel-link:hover {
     color: #4a77e2;
+}
+
+.sidebar textarea {
+    font-family: "ProximaNova", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #232a30;
 }
 
 .checkbox-box {
@@ -2255,7 +2265,7 @@ textarea::placeholder {
     border-top: 1px solid #ededed;
 }
 
-/*-- Rating PAge --*/
+/*-- Rating Page --*/
 
 .rating-table {
     width: 100%;
@@ -2523,6 +2533,11 @@ textarea::placeholder {
     position: relative;
 }
 
+.data-range-block .datepiker-range.full-width {
+    width: 100%;
+    margin: 0;
+}
+
 .data-range-block p {
     display: inline-block;
     vertical-align: middle;
@@ -2578,6 +2593,42 @@ textarea::placeholder {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.data-month .month-range {
+    width: 48%;
+}
+
+.data-month .month-range:nth-child(2n + 1) {
+    margin: 0 2% 0 0;
+}
+
+.data-month .month-range:nth-child(2n) {
+    margin: 0 0 0 2%;
+}
+
+.month-range {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    font-family: "ProximaNova", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #4a77e2;
+    border: 2px solid rgba(166,184,196,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.month-range:after {
+    display: none;
 }
 
 .tabs {

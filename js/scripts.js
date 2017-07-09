@@ -38,11 +38,11 @@ $(document).ready(function() {
 
     getFooterPosition();
 
-    getSidebarParams();
+    getFixedElementsParams();
 
     $(window).resize(function() {
 
-        getSidebarParams();
+        getFixedElementsParams();
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
@@ -58,7 +58,21 @@ $(document).ready(function() {
 
     $(document).scroll(function() {
 
-        getSidebarParams();
+        getFixedElementsParams();
+
+        // if( $(document).scrollTop() > $(".header-site").height() ) {
+
+        //     $(".main-content-header").css({
+        //         "top" : $(".header-site").height() + "px"
+        //     });
+
+        // } else {
+
+        //     $(".main-content-header").css({
+        //         "top" : 0 + "px"
+        //     });
+
+        // }
 
     });
 
@@ -87,11 +101,19 @@ $(document).ready(function() {
         });
 
 
-        $(".show_order_box").click(function() {
-
-            $(this).toggleClass("active");
+        $(".order-box-header").click(function() {
 
             indexOrderBox = $(this).closest(".order-box").index(".order-box");
+
+            if($(this).hasClass("show_order_box")) {
+
+                $(this).toggleClass("active");
+
+            } else {
+
+                $(".order-box:eq("+ indexOrderBox +") .show_order_box").toggleClass("active");
+
+            }
 
             $(".order-box:eq("+ indexOrderBox +") .slide-block").slideToggle(500);
 
@@ -102,6 +124,24 @@ $(document).ready(function() {
             }
 
         });
+
+        // $(".order-box-header").click(function() {
+
+        //     // $(this).toggleClass("active");
+
+        //     indexOrderBox = $(this).closest(".order-box").index(".order-box");
+
+        //     $(".order-box:eq("+ indexOrderBox +") .show_order_box").toggleClass("active");
+
+        //     $(".order-box:eq("+ indexOrderBox +") .slide-block").slideToggle(500);
+
+        //     if( $(".order-box:eq("+ indexOrderBox +")").next(".additional-slide-block").length ) {
+
+        //         $(".order-box:eq("+ indexOrderBox +")").next(".additional-slide-block").slideToggle(500);
+
+        //     }
+
+        // });
 
         $(".show-task-content").each(function() {
 
@@ -278,7 +318,7 @@ $(document).ready(function() {
 
     sidebarBottomCoor = sidebar.outerHeight() + $(".header-site").height();
 
-    function getSidebarParams() {
+    function getFixedElementsParams() {
 
         if($(".header-site").length > 0 && $(".main-content-header").length > 0) {
 
@@ -294,7 +334,7 @@ $(document).ready(function() {
 
                 mainContentHeader.addClass("fixed_scroll");
 
-                setTimeout(function() {                    
+                setTimeout(function() {
 
                     mainContentHeader.css({
                         "top" : headerSite.height() + "px"

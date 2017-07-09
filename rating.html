@@ -11,18 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
-	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
-	<script type="text/javascript" src="vendors/js/parallax.js"></script>
+	<script type="text/javascript" src="vendors/js/chartist.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
@@ -124,7 +125,7 @@
 							<!-- Заявки -->
 
 								<div class="order-box">
-									<div class="order-box-header clearfix">
+									<!-- <div class="order-box-header clearfix">
 										<div class="col col-1 left">
 											<h3>02 Мая <span class="grey">Среда</span></h3>
 										</div>
@@ -133,7 +134,7 @@
 												<i class="fa fa-angle-down" aria-hidden="true"></i>
 											</button>
 										</div>
-									</div>
+									</div> -->
 									<div class="slide-block">
 
 										<div class="rating-table">
@@ -401,7 +402,7 @@
 								</div>
 
 								<div class="order-box">
-									<div class="order-box-header clearfix">
+									<!-- <div class="order-box-header clearfix">
 										<div class="col col-1 left">
 											<h3>03 Мая <span class="grey">Четверг</span></h3>
 										</div>
@@ -410,7 +411,7 @@
 												<i class="fa fa-angle-down" aria-hidden="true"></i>
 											</button>
 										</div>
-									</div>
+									</div> -->
 									<div class="slide-block">
 
 										<div class="rating-table">
@@ -587,14 +588,33 @@
 										<div class="tab">
 											<input type="radio" name="tabs_1" id="tab_3" class="input-tab">
 											<div class="tab-content">
-												<div class="data-range-block offset-ziro">
-													<p>С</p>
-													<div class="datepiker-range">
-														<input type='text' class="datepicker-input datepicker-here" data-min-view="months" data-view="months" data-position="left top" data-date-format="MM"/>
+												<div class="data-range-block data-month offset-ziro">
+													<div class="datepiker-range month-range">
+														<select>
+															<option>Январь</option>
+															<option>Февраль</option>
+															<option>Март</option>
+															<option>Апрель</option>
+															<option>Май</option>
+															<option>Июнь</option>
+															<option>Июль</option>
+															<option>Август</option>
+															<option>Сеньтябрь</option>
+															<option>Октябрь</option>
+															<option>Декабрь</option>							
+														</select>
 													</div>
-													<p>по</p>
-													<div class="datepiker-range">
-														<input type='text' class="datepicker-input datepicker-here" data-min-view="months" data-view="months" data-position="left top" data-date-format="MM"/>
+													<div class="datepiker-range month-range">
+														<select>
+															<option>2010</option>
+															<option>2011</option>
+															<option>2012</option>
+															<option>2013</option>
+															<option>2014</option>
+															<option>2015</option>
+															<option>2016</option>
+															<option>2017</option>
+														</select>
 													</div>
 												</div>
 											</div>
@@ -621,7 +641,7 @@
 								</div>
 
 								<div class="form-row select-box">
-									<select class="user-select-2">
+									<select class="user-select-2" data-user = "Замерщик">
 										<option data-img-url = "img/user.jpg">Анюта</option>
 										<option data-img-url = "img/user.jpg">Анюта</option>
 										<option data-img-url = "img/user.jpg">Анюта</option>

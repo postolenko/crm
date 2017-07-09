@@ -1,6 +1,8 @@
 $(window).on("load",function(){
 
-	$(".scroll").mCustomScrollbar();
+	$(".scroll").mCustomScrollbar({
+		scrollInertia:350
+	});
 
 });
 
@@ -54,6 +56,7 @@ $(document).ready(function() {
 		if (!opt.id) { return opt.text; }
 
 			var optimage = $(opt.element).attr('data-img-url');
+			var optUser = $(opt.element).parent("select").attr('data-user');
 
 		if(!optimage) {
 
@@ -67,7 +70,7 @@ $(document).ready(function() {
 				<span class="col col-1"> \
 					<span class="img-box"><img src="'+ optimage +'"></span> \
 				</span>\
-				<span class="col-2"><span class="small">Замерщик</span><span class="p-1">  ' + opt.text + '</span></span>\
+				<span class="col-2"><span class="small">'+ optUser +'</span><span class="p-1">  ' + opt.text + '</span></span>\
 			</span>'
 		);
 
@@ -118,6 +121,10 @@ if( $(".ct-chart").length > 0 ) {
 
 }
 
+//  --- Fancybox ---
 
+$("[data-fancybox='group']").fancybox({
+
+});
 
 });
