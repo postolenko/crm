@@ -1946,7 +1946,7 @@ textarea::placeholder {
 }
 
 .tel-input p {
-    display: table-cell;
+    display: table-cell !important;
     vertical-align: top;
     width: 21px;
     height: 26px;
@@ -1958,7 +1958,7 @@ textarea::placeholder {
 }
 
 .tel-input input {
-    display: table-cell;
+    display: table-cell !important;
     vertical-align: top;
     width: auto;
     height: 26px;
