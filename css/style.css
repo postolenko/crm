@@ -1955,6 +1955,7 @@ textarea::placeholder {
     line-height: 26px;
     font-weight: 600;
     color: #232a30;
+    padding: 2px 0 0 0;
 }
 
 .tel-input input {
