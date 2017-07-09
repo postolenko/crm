@@ -123,8 +123,10 @@ if( $(".ct-chart").length > 0 ) {
 
 //  --- Fancybox ---
 
-$("[data-fancybox='group']").fancybox({
 
-});
+	$("[data-fancybox]").fancybox();
+
+
+
 
 });
