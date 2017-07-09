@@ -898,7 +898,8 @@ textarea::placeholder {
 .sidebar.fixed {
     position: fixed;
     top: 0;
-    right: 0;    
+    right: 0;
+    float: none; 
 }
 
 /*-- Main Content --*/
@@ -936,6 +937,7 @@ textarea::placeholder {
     top: -100%;
     left: 0;
     z-index: 3;
+    float: none;
     padding: 2px 2% 5px 2%;
     background: #ffffff;
     -webkit-box-shadow: 0 2px 3px 0 rgba(112, 135, 150, .3);
