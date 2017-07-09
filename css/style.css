@@ -1034,11 +1034,12 @@ textarea::placeholder {
 }
 
 .search-box {
-    display: inline-table;
+    display: inline-block;
     vertical-align: top;
     width: 224px;
     height: 40px;
     margin: 10px 2%;
+    position: relative;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -1048,10 +1049,9 @@ textarea::placeholder {
 }
 
 .search-box input {
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
     border-collapse: collapse;
-    width: 180px;
+    width: 100%;
     height: 40px;
     padding: 3px 2% 4px 8%;
     border-top: solid 1px rgba(165, 184, 196, 0.2);
@@ -1066,11 +1066,13 @@ textarea::placeholder {
 }
 
 .search-box .submit-btn {
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: rgb(74, 119, 226);
     border: 1px solid rgb(74, 119, 226);
     background-image: url(../img/search.png);
