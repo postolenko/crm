@@ -715,7 +715,6 @@ textarea::placeholder {
 /*-- Main Page --*/
 
 .main-page {
-    /*border: 1px solid #419bf9;*/
     background-image: url(../img/index_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -910,12 +909,32 @@ textarea::placeholder {
     padding-right: 2%;
     background: #f5f8fa;
     padding: 30px 0 10px 0;
+
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .main-content-header.fixed_scroll {
     width: 75%;
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     z-index: 3;
     padding: 2px 2% 5px 2%;
@@ -1358,7 +1377,7 @@ textarea::placeholder {
     vertical-align: top;
     width: 16px;
     height: 18px;
-    background-image: url(../img/user_icon.png.png);
+    background-image: url(../img/user_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -1522,7 +1541,7 @@ textarea::placeholder {
     vertical-align: top;
     width: 20px;
     height: 18px;
-    background-image: url(../img/cash_icon.png.png);
+    background-image: url(../img/cash_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -2748,20 +2767,22 @@ textarea::placeholder {
 }
 
 .two-cols-option {
-    display: table;
-}
-
-.two-cols-option .col-1 {
-    display: table-cell;
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-}
-
-.two-cols-option .col-1 .img-box {
     display: block;
-    width: 24px;
-    height: 24px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.select-tmpl .col-1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px !important;
+    padding: 1px 0 0 0;
+}
+
+.select-tmpl .col-1 .img-box {
+    display: block;
+    width: 33px;
+    height: 33px;
     overflow: hidden;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -2770,32 +2791,64 @@ textarea::placeholder {
     border-radius: 50%;
 }
 
-.two-cols-option .col-1 .img-box img {
+.select-tmpl .col-1 .img-box img {
     display: block;
     min-width: 100%;
     min-height: 100%;
 }
 
-.two-cols-option .col-2 {
-    display: table-cell;
+.select-tmpl .col-2 {
+    display: inline-block;
     vertical-align: middle;
     width: auto;
+    padding: 0 0 0 4px;
 }
 
-.two-cols-option .col-2 span {
+/*.select-tmpl .col-2 span {
     font-family: "ProximaNova", Arial, Verdana, sans-serif;
     font-size: 12px;
     line-height: 12px;
     color: #8ca0ac;
     font-weight: normal;
-    padding: 2px 0;
-}
+}*/
 
-.two-cols-option .col-2 span.p-1 {
+.select-tmpl .col-2 span {
     font-size: 14px;
     line-height: 14px;
     color: #232a30;
     font-weight: 600;
+    text-transform: none !important;
+}
+
+.select-tmpl-2 .col-2 span.small {
+    font-size: 12px;
+    line-height: 12px;
+    color: #708796;
+    font-weight: 300;
+}
+
+.select-tmpl-2 .col-2 span.p-1  {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #3d4f66;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
+}
+
+.select2-selection__rendered .select-tmpl-2 {
+    display: block;
+    margin: -7px 0 0 0;
+}
+
+.select2-selection__rendered .select-tmpl-2 .col-1 {
+    padding: 5px 0 0 0;
+}
+
+.select2-selection__rendered .select-tmpl-2 .col-2 span.p-1  {
+    position: relative;
+    top: -5px;
 }
 
 .ct-chart {

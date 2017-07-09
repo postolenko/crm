@@ -312,38 +312,16 @@
 									<div class="col col-2">
 
 										<div class="form-row select-box">
-											<select>
-												<option>Замерщик</option>
-												<option>Замерщик_1</option>
-												<option>Замерщик_2</option>
-												<option>Замерщик_3</option>
-												<option>Замерщик_4</option>
-												<option>Замерщик_5</option>
+											<select class="user-select-2">
+												<option data-img-url = "img/user.jpg">Анюта</option>
+												<option data-img-url = "img/user.jpg">Анюта</option>
+												<option data-img-url = "img/user.jpg">Анюта</option>
+												<option data-img-url = "img/user.jpg">Анюта</option>
+												<option data-img-url = "img/user.jpg">Анюта</option>
+												<option data-img-url = "img/user.jpg">Анюта</option>
 											</select>
 										</div>
-
-										<div class="form-row select-box">
-											<select class="custom-select">
-												<option>
-
-													<div class="two-cols-option">
-														<div class="col-1 img-box">
-															<img src="img/user.jpg" />
-														</div>
-														<div class="col-2">
-															<div>Замерщик</div>
-															<div class="p-1">Анюта</div>
-														</div>
-													</div>
-
-												</option>
-												<option>Город_1</option>
-												<option>Город_2</option>
-												<option>Город_3</option>
-												<option>Город_4</option>
-												<option>Город_5</option>
-											</select>
-										</div>
+										
 									</div>
 
 								</div>
@@ -375,85 +353,7 @@
 
 		<script src="js/scripts.js"></script>
 
-		<script>
-			
-			(function($){
-
-				$(window).on("load",function(){
-
-					$(".scroll").mCustomScrollbar();
-
-				});
-
-			})(jQuery);
-
-			$("select").select2();
-
-			// var optionTxt = [{
-		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		 //    }, {
-		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		 //    }, {
-		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		 //    }, {
-		 //        ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		 //    }, {
-		 //       ctn: '<div class="two-cols-option"><div class="col-1 img-box"><img src="img/user.jpg" /></div><div class="col-2"><div>Замерщик</div><div class="p-1">Анюта</div></div></div>'
-		 //    }];
-
-			// function formatState (optionTxt) {
-			//   // if (!state.id) { return state.text; }
-			//   // var $optionTxt = $(
-
-			//  //  if (!optionTxt.id) { return optionTxt.text; }
-			//  //  var ctn = $(optionTxt.element).html();
-
-			//  //  console.log(ctn);
-			// 	// if (!ctn) {
-			// 	//     return optionTxt.text;
-			// 	// }
-			// 	// else{
-
-			// 	// 	var $optionTxt = $("<span>" + ctn + "</span>");
-			//  //  }
-
-			//   return optionTxt;
-			// };
-
-			
-
-			// $(".custom-select").select2({
-			// 	 templateResult: formatState,
-			// 	 templateSelection: formatState
-			// });
-
-			$('.datepicker-here').data('datepicker');
-
-			new Chartist.Bar('.ct-chart', {
-			  labels: ['01 Мая' , '02 Мая' , '03 Мая' , '04 Мая' , '05 Мая' , '06 Мая' , '07 Мая' ],
-			  series: [
-			    [600000, 400000, 800000, 700000, 800000, 900000, 1000000],
-			    [400000, 300000, 700000, 500000, 900000, 700000, 1000000],
-			    [500000, 700000, 500000, 600000, 700000, 600000, 1000000]
-			  ]
-			}, {
-			  seriesBarDistance: 15,
-			  axisX: {
-			    offset: 40
-			  },
-			  axisY: {
-			    offset: 70,
-			    scaleMinSpace: 25
-			  }
-			});
-
-			$(".ct-chart .ct-label.ct-vertical.ct-start").each(function() {
-
-				$(this).append('<i class="fa fa-rub" aria-hidden="true"></i>');
-
-			});
-
-		</script>
+		<script src="js/additional_scripts.js"></script>
 	
 	</div>
 

@@ -247,28 +247,32 @@ $(document).ready(function() {
     // ---------------------------------------
 
 
-    function getFooterPosition() {
+    function getFooterPosition() {        
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
-        setFooterPositionInterval = setInterval(function() {
+        if( $(".content").length > 0 && $(".footer").length > 0) {
 
-            contentCoor = $(".content").offset().top + $(".content").height();
-            footerCoor = $(".footer").offset().top;
+            setFooterPositionInterval = setInterval(function() {
 
-            if( contentCoor != footerCoor ) {
+                contentCoor = $(".content").offset().top + $(".content").height();
+                footerCoor = $(".footer").offset().top;
 
-                $(".wrapper").css({"min-height" : $(window).height() + "px"});
+                if( contentCoor != footerCoor ) {
 
-                $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+                    $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
-                clearInterval(setFooterPositionInterval);
+                    $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
-            }
+                    clearInterval(setFooterPositionInterval);
 
-        }, 35);
+                }
+
+            }, 35);
+
+        }
 
     }
 
@@ -290,27 +294,32 @@ $(document).ready(function() {
 
                 mainContentHeader.addClass("fixed_scroll");
 
-                mainContentHeader.css({
-                    "top" : headerSite.height() + "px"
-                });
-
-                var positionInterval = setInterval(function() {
+                setTimeout(function() {                    
 
                     mainContentHeader.css({
                         "top" : headerSite.height() + "px"
                     });
 
-                    if( mainContentHeader.offset().top >  headerSite.height()) {
+                }, 500);
+                
 
-                        clearInterval(positionInterval);
+                // var positionInterval = setInterval(function() {
 
-                        mainContentHeader.css({
-                            "top" : headerSite.height() + "px"
-                        });
+                //     mainContentHeader.css({
+                //         "top" : headerSite.height() + "px"
+                //     });
 
-                    }
+                //     if( mainContentHeader.offset().top >  headerSite.height()) {
 
-                }, 35);
+                //         clearInterval(positionInterval);
+
+                //         mainContentHeader.css({
+                //             "top" : headerSite.height() + "px"
+                //         });
+
+                //     }
+
+                // }, 35);
 
             } else {
 
@@ -328,10 +337,14 @@ $(document).ready(function() {
 
                 sidebar.addClass("fixed");
 
-                sidebar.css({
-                    "top" : headerSite.height() + "px",
-                    "height" : sidebarHeight + "px"
-                });            
+                setTimeout(function() {  
+
+                    sidebar.css({
+                        "top" : headerSite.height() + "px",
+                        "height" : sidebarHeight + "px"
+                    });
+
+                }, 400);
 
             } else {
 
