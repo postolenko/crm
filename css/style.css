@@ -3064,6 +3064,10 @@ textarea::placeholder {
     text-transform: none;
 }
 
+.order-content-rows .input-box-border .tel-input p {
+    padding-top: 0;
+}
+
 .order-content-rows .row-two-cols .input-box-border {
     width: 240px;
 }
