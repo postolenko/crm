@@ -951,12 +951,12 @@ textarea::placeholder {
 }
 
 .main-content-header .col-1 {
-    width: 36%;
+    width: 47%;
     padding: 13px 0 0 0;
 }
 
 .main-content-header .col-2 {
-    width: 64%;
+    width: 53%;
     text-align: right;
 }
 
@@ -3012,7 +3012,7 @@ textarea::placeholder {
 .order-content-rows .row-two-cols .form-box-input label {
     display: table-cell;
     vertical-align: middle;
-    width: 115px;
+    width: 123px;
     font-family: "ProximaNova", Arial, Verdana, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -3076,7 +3076,7 @@ textarea::placeholder {
 }
 
 .order-content-rows .row-two-cols .input-box-border {
-    width: 240px;
+    width: 290px;
 }
 
 .order-content-rows .row-two-cols .input-box-border:hover {
@@ -3111,7 +3111,8 @@ textarea::placeholder {
 }
 
 .tel-input.input-box-border input {
-    width: 178px;
+    /*width: 178px;*/
+    min-width: 178px;
     font-family: "ProximaNova", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 23px;
@@ -3187,9 +3188,30 @@ textarea::placeholder {
     height: 80px;
     cursor: pointer;
     border: solid 0.5px #a5b9c5;
-    background-image: url(../img/upl_image.jpg);
+    text-align: center;
+    background-color: #f2f5f7;
+/*    background-image: url(../img/upl_image.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+}
+
+.photo-icon {
+    display: block;
+    width: 23px;
+    height: 18px;
+    margin: 2px auto;
+    background-image: url(../img/icon_photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.upl-image span {
+    font-family: "ProximaNova", Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #708796;
 }
 
 .row-two-cols .col.align-right {
