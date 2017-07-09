@@ -2066,6 +2066,10 @@ textarea::placeholder {
     background: rgb(77, 161, 255);
 }
 
+.checkbox-box input[type="checkbox"]:checked + label {
+    color: #3d4f66 !important;
+}
+
 .checkbox-box label:before {
     display: block;
     content: "";

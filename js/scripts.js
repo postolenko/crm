@@ -303,24 +303,6 @@ $(document).ready(function() {
                 }, 500);
                 
 
-                // var positionInterval = setInterval(function() {
-
-                //     mainContentHeader.css({
-                //         "top" : headerSite.height() + "px"
-                //     });
-
-                //     if( mainContentHeader.offset().top >  headerSite.height()) {
-
-                //         clearInterval(positionInterval);
-
-                //         mainContentHeader.css({
-                //             "top" : headerSite.height() + "px"
-                //         });
-
-                //     }
-
-                // }, 35);
-
             } else {
 
                 headerSite.removeClass("fixed_scroll");
