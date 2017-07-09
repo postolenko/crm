@@ -29,8 +29,8 @@ $(document).ready(function() {
 
     // ---------------------------
 
-    var headerSite;
-    var mainContentHeader;
+    var headerSite = $(".header-site");
+    var mainContentHeader = $(".main-content-header");
     var documentBottomCoor;
     var sidebarHeight;
 
@@ -58,21 +58,7 @@ $(document).ready(function() {
 
     $(document).scroll(function() {
 
-        getFixedElementsParams();
-
-        // if( $(document).scrollTop() > $(".header-site").height() ) {
-
-        //     $(".main-content-header").css({
-        //         "top" : $(".header-site").height() + "px"
-        //     });
-
-        // } else {
-
-        //     $(".main-content-header").css({
-        //         "top" : 0 + "px"
-        //     });
-
-        // }
+        getFixedElementsParamsScroll();
 
     });
 
@@ -322,8 +308,8 @@ $(document).ready(function() {
 
         if($(".header-site").length > 0 && $(".main-content-header").length > 0) {
 
-            headerSite = $(".header-site");
-            mainContentHeader = $(".main-content-header");        
+            // headerSite = $(".header-site");
+            // mainContentHeader = $(".main-content-header");        
 
             documentBottomCoor = $(window).height() + $(document).scrollTop();
             sidebarHeight = $(window).height() - headerSite.height();
@@ -381,6 +367,42 @@ $(document).ready(function() {
 
             content.css({
                 "margin-top" : headerSite.height() + "px"
+            });
+
+        }
+
+    }
+
+    function getFixedElementsParamsScroll() {
+
+        if( $(document).scrollTop() > $(".header-site").height() ) {
+
+            $(".main-content-header").addClass("fixed_scroll");
+
+            $(".main-content-header").css({
+                "top" : $(".header-site").height() + "px"
+            });
+
+            $(".sidebar").addClass("fixed");
+
+            $(".sidebar").css({
+                "top" : headerSite.height() + "px",
+                "height" : sidebarHeight + "px"
+            });
+
+        } else {
+
+            $(".main-content-header").removeClass("fixed_scroll");
+
+            $(".main-content-header").css({
+                "top" : 0 + "px"
+            });
+
+            $(".sidebar").removeClass("fixed");
+
+            $(".sidebar").css({
+                "top" : 0 + "px",
+                "height" : "auto"
             });
 
         }
